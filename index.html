@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elige tu destino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">Elige tu destino</h1>
+    <p class="subtitle">Selecciona uno de los dos botones para descubrir tu suerte.</p>
+
+    <!-- Contenedor de botones de elección -->
+    <div class="buttons-container" id="choicesContainer">
+      <button id="btnRed" class="game-btn btn-red" type="button" aria-label="Elegir botón rojo">
+        <span class="btn-text">Rojo</span>
+      </button>
+      <button id="btnBlue" class="game-btn btn-blue" type="button" aria-label="Elegir botón azul">
+        <span class="btn-text">Azul</span>
+      </button>
+    </div>
+
+    <!-- Contenedor del resultado y reinicio -->
+    <div id="resultContainer" class="result-container hidden" aria-live="polite">
+      <div id="resultMessage" class="result-message"></div>
+      <button id="btnReset" class="btn-reset" type="button">
+        Volver a jugar
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
